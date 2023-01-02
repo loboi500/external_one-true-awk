@@ -1,21 +1,3 @@
-#!/bin/sh
-
-uname -a
-gcc echo.c -o echo && echo echo compiled
-
-oldawk=${oldawk-awk}
-awk=${awk-../a.out}
-
-echo oldawk=$oldawk, awk=$awk 
-
-oldawk=$oldawk awk=$awk Compare.t t.*
-	echo `ls t.* | wc -l` tests; echo
-
-oldawk=$oldawk awk=$awk Compare.p p.? p.??*
-	echo `ls p.* | wc -l` tests; echo
-
-oldawk=$oldawk awk=$awk Compare.T1
-	echo `grep '\$awk' T.* | wc -l` tests; echo
-
-oldawk=$oldawk awk=$awk Compare.tt tt.*
-	echo `ls tt.* | wc -l` tests; echo
+version https://git-lfs.github.com/spec/v1
+oid sha256:168588840bb283e1228c35b02728772eba419f1ca79d96ab2019c8dfdecf708d
+size 447
